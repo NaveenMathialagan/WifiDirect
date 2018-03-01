@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Wifi Direct</string>
+    <string name="discover_peers">Discover Peers</string>
+    <string name="connect_peer">Connect to Peer</string>
+    <string name="wifi_direct">Peers List</string>
+    <string name="no_peer_found">No Peer Found</string>
+    <string name="peers_found">Peers found</string>
+    <string name="connected">Connected to Peer</string>
+    <string name="unable_to_connect">Unable to cnnect to peer</string>
+    <string name="sample_message">Sample Message</string>
+    <string name="sample_time">10:00am</string>
+    <string name="enter_message">Nothing to send</string>
+    <string name="peers_setting">Peers Setting</string>
+    <string name="status_not_connected">Not Connected</string>
+    <string name="status_connected">Conneted</string>
+    <string name="device_name">Device Name</string>
+    <string name="connecting">Connecting\.\.\.</string>
+    <string name="no_device_found">No Device Found</string>
+    <string name="none">None</string>
+    <string name="already_connected">This device is already connected</string>
+    <string name="connect">Connect</string>
+    <string name="chat">Chat</string>
+</resources>

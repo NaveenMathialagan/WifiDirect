@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.FirstActivity">
+
+    <Button
+        android:id="@+id/button_connect"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/send_button_back"
+        android:drawableTop="@drawable/ic_wifi_48"
+        android:text="@string/connect"
+        style="@style/fist_page_button"
+        />
+
+
+</LinearLayout>

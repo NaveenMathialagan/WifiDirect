@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".view.activity.ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:id="@+id/connection_type"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/socket_status"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/twenty"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/layout_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:padding="@dimen/five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_message"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_weight="1"
+            style="@style/edit_text_style"
+            android:id="@+id/edit_message"
+            android:background="@drawable/edittext_back"
+            android:layout_width="0dp"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <ImageView
+            android:src="@drawable/ic_send_white_24dp"
+            android:background="@drawable/send_button_back"
+            android:id="@+id/buttton_send"
+            style="@style/image_view"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+</RelativeLayout>
